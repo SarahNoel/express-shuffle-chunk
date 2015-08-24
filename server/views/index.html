@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+
+  <div class="container">
+
+    <h1>{{ title }}</h1>
+
+    <form method="post" id="shuffle"  action="/submit">
+Input names of things to be shuffled (separated by commas)
+    <br>
+    <textarea rows = "4" cols = "50" type = 'text' name="totalNum" id = "totalNum"> </textarea>
+    <br>
+    <br>
+    Number of Groups
+    <br>
+    <input name="groupNum" id = "groupNum">
+    <br>
+    <br>
+    <input type="submit" value = "Shuffle!">
+    </form>
+
+
+  </div>
+
+{% endblock %}

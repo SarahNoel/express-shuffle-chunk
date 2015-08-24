@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+
+  <div class="container">
+
+    <h1>{{ title }}</h1>
+
+  <h3>Groups</h3>
+
+  {% for group in groupFinal %}
+  <ul>
+  <li>  {{group}} </li>
+
+  </ul>
+  {% endfor %}
+
+
+  <br>
+  <form method="post" id="shuffle"  action="/submit2">
+  <input type="submit" value = "Shuffle a new Group">
+  </form>
+
+
+  </div>
+
+{% endblock %}
